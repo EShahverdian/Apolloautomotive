@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div style="background-image: url('/static/backgroundimages/merc1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="container text-center" style="background-color: rgba(255, 255, 255, 0.5);">
+            <!-- Welcome Message -->
+            <h1 style="color: black; font-size: 3rem; margin-bottom: 20px;">Welcome to Apollo Automotive</h1>
+            <p style="color: black; font-size: 1.5rem; line-height: 1.5;">Discover a wide selection of quality used cars at competitive prices. Whether you're looking for a reliable sedan, a spacious SUV, or a sporty coupe, we have the perfect vehicle to suit your needs. Browse our inventory and find your dream car today!</p>
+        </div>
+
+        <div class="announcements" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; margin-top: 10px; text-align: center;">
+            <!-- Announcements Section -->
+            <h2>Announcements</h2>
+            <p>Check out our latest deals and promotions!</p>
+            <div class="card" style="background-color: transparent; border: none;">
+                <h3>New Vehicles Recently Added</h3>
+                <!-- Vehicle Information -->
+                <!-- <p><strong>Make:</strong> Ford</p>
+                <p><strong>Model:</strong> Mustang</p>
+                <p><strong>Year:</strong> 2018</p>
+                <p><strong>Price:</strong> $25,000</p>
+                <p><strong>Mileage:</strong> 30,000 miles</p>
+                <p><strong>Condition:</strong> Used</p> -->
+                <p>Schedule an appointment to test drive an amazing car today!</p>
+            </div>
+        </div>
+
+        <div class="contact-info" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; margin-top: 20px; text-align: left;">
+            <!-- Contact Information Section -->
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> 714-240-8510</p>
+            <p><strong>Email:</strong> info@apolloautomotive.com</p>
+            <p><strong>Location:</strong> Corona, California</p>
+        </div>
+    </div>
+{% endblock %}

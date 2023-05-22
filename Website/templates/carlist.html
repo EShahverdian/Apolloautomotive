@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    {% for car in cars %}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">{{ car.make }} {{ car.model }}</h2>
+                <p class="card-text">Year: {{ car.year }}</p>
+                <p class="card-text">Price: ${{ car.price }}</p>
+            </div>
+            {% if car.image_filename %}
+            <img src="{{ url_for('static', filename='images/' + car.image_filename) }}" class="card-img-left" alt="{{ car.make }} {{ car.model }} image">
+            {% else %}
+            <img src="{{ url_for('static', filename='images/car_default.jpg') }}" class="card-img-left" alt="{{ car.make }} {{ car.model }} image">
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+    <!-- new cars start -->
+    <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Ford Expedition Max</h2>
+            <p class="card-text">Year: 2019</p>
+            <p class="card-text">Price: $35,995</p>
+            <p class="card-text">Mileage: 50,000</p>
+            <p class="card-text">Condition: Used</p>
+        </div>
+        <div id="imageGallery" class="card-img">
+            <img onclick="nextImage()" src="{{ url_for('static', filename='backgroundimages/ford.jpg') }}" class="img-fluid" alt="Car Image 1">
+            <img onclick="nextImage()" src="{{ url_for('static', filename='backgroundimages/ford2.jpg') }}" class="img-fluid" alt="Car Image 2">
+            <img onclick="nextImage()" src="{{ url_for('static', filename='backgroundimages/ford3.jpg') }}" class="img-fluid" alt="Car Image 3">
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Toyota 4Runner</h2>
+            <p class="card-text">Year: 2003</p>
+            <p class="card-text">Price: $10,000</p>
+            <p class="card-text">Mileage: 169,000</p>
+            <p class="card-text">Condition: Like New</p>
+        </div>
+
+            <img src="{{ url_for('static', filename='backgroundimages/toyota1.jpg') }}" class="card-img-center" alt="New Model image">
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+   <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Toyota Prius</h2>
+            <p class="card-text">Year: 2013</p>
+            <p class="card-text">Price: $7,400</p>
+            <p class="card-text">Mileage: 182,000</p>
+            <p class="card-text">Condition: Used </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/prius1.jpg') }}" class="card-img-left" alt="New Model image">
+    </div>
+</div>
+
+    <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Honda Accord Sport</h2>
+            <p class="card-text">Year: 2015</p>
+            <p class="card-text">Price: $10,999</p>
+            <p class="card-text">Mileage: 152,000</p>
+            <p class="card-text">Condition: Clean </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/honda1.jpg') }}" class="card-img-left" alt="New Model image">
+    </div>
+</div>
+     <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Jeep Wrangler Unlimited</h2>
+            <p class="card-text">Year: 2005</p>
+            <p class="card-text">Price: $25,000</p>
+            <p class="card-text">Mileage: 97,300</p>
+            <p class="card-text">Condition: Used </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/jeep1.jpg') }}" class="card-img-left" alt="New Model image">
+    </div>
+</div>
+
+    <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Mazda 6</h2>
+            <p class="card-text">Year: 2016</p>
+            <p class="card-text">Price: $8,500</p>
+            <p class="card-text">Mileage: 146,000</p>
+            <p class="card-text">Condition: Clean </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/mazda1.jpg') }}" class="card-img-left" alt="New Model image">
+    </div>
+</div>
+
+     <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Toyota Corolla</h2>
+            <p class="card-text">Year: 2013</p>
+            <p class="card-text">Price: $8,100</p>
+            <p class="card-text">Mileage: 76,000</p>
+            <p class="card-text">Condition: Clean </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/.jpg') }}" class="card-img-left" alt="New Make New Model image">
+    </div>
+</div>
+ <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Kia Sportage</h2>
+            <p class="card-text">Year: 1998</p>
+            <p class="card-text">Price: $11,000</p>
+            <p class="card-text">Mileage: 110,000</p>
+            <p class="card-text">Condition: Used </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/.jpg') }}" class="card-img-left" alt="New Make New Model image">
+    </div>
+</div>
+ <div class="col-md-6 mb-4">
+    <div class="card h-100" style="background-color: #e6eaf0; border: 4px solid #000000;">
+        <div class="card-body">
+            <h2 class="card-title">Jeep Wrangler</h2>
+            <p class="card-text">Year: 1994</p>
+            <p class="card-text">Price: $9,900</p>
+            <p class="card-text">Mileage: 150,000</p>
+            <p class="card-text">Condition: Used </p>
+        </div>
+        <img src="{{ url_for('static', filename='backgroundimages/.jpg') }}" class="card-img-left" alt="New Make New Model image">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- new cars end -->
+</div>
+<script>
+    // JavaScript code for slideshow effect, needs fixing. (clicking 1 image changes images for other cars)
+    var imageGallery = document.getElementById('imageGallery');
+    var images = imageGallery.getElementsByTagName('img');
+    var currentIndex = 0;
+
+    function showImage(index) {
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.display = 'none';
+        }
+        // Show the image at the specified index
+        images[index].style.display = 'block';
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Show the first image initially
+    showImage(currentIndex);
+</script>
+
+
+
+{% endblock %}
