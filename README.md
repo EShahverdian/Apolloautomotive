@@ -1,5 +1,5 @@
 # Apolloautomotive
-Python flask application for used car sales website
+Python flask application for used car sales website (Work In Progress- Incomplete Features)
 
 ![Screenshot 2024-04-11 at 13-44-54 Home](https://github.com/Demigod808/Apolloautomotive/assets/13771746/d2f3e965-eb1d-437e-aac6-ee651b941d46)
 ![Screenshot 2024-04-11 at 13-45-10 Login](https://github.com/Demigod808/Apolloautomotive/assets/13771746/e2e4eaa2-c965-47a9-9c57-597dc8ae963c)
