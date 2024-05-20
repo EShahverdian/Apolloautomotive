@@ -50,7 +50,7 @@ pip install -r requirements.txt
 Running the Program From PyCharm
 
     Open the project in PyCharm.
-    Locate the main script (e.g., main.py).
+    Locate the main script (main.py).
     Right-click the script and select "Run 'main'".
 
 From the Command Line
