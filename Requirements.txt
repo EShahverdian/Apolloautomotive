@@ -1,0 +1,3 @@
+The Following Are Required To Build Apollo
+
+Python Version: 3.8
