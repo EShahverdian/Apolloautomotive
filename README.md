@@ -13,10 +13,10 @@ Python Flask application for used car sales website. The purpose of this website
 
 If you haven't already, clone the repository to your local machine using Git:
 
+```
 git clone https://github.com/Demigod808/Apolloautomotive.git
 cd Apolloautomotive
-
-
+```
 Alternatively, you can download the ZIP file from GitHub and extract it.
 
 ### Step 2: Set Up a Virtual Environment
@@ -24,8 +24,10 @@ Alternatively, you can download the ZIP file from GitHub and extract it.
 python -m venv venv
 ```
 On Windows:
-
+```
 .\venv\Scripts\activate
+```
+
 It's recommended to use a virtual environment to manage dependencies. You can create one using venv:
 
 ![Screenshot 2024-04-11 at 13-44-54 Home](https://github.com/Demigod808/Apolloautomotive/assets/13771746/d2f3e965-eb1d-437e-aac6-ee651b941d46)
