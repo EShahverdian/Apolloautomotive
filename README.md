@@ -1,10 +1,32 @@
 # Apolloautomotive
-Python flask application for used car sales website (Work In Progress- Incomplete Features)
+Python Flask application for used car sales website. The purpose of this website is to showcase a list of used vehicles available for sale. (Work In Progress- Incomplete Features)
 
-Setup Guide
-Requirements: Python Version 3.8
+## Requirements
+
+- Python 3.8
+- PyCharm
+- Git (optional)
+
+## Installation
+
+### Step 1: Clone the Repository
+
+If you haven't already, clone the repository to your local machine using Git:
+
+git clone https://github.com/Demigod808/Apolloautomotive.git
+cd Apolloautomotive
 
 
+Alternatively, you can download the ZIP file from GitHub and extract it.
+
+### Step 2: Set Up a Virtual Environment
+```
+python -m venv venv
+```
+On Windows:
+
+.\venv\Scripts\activate
+It's recommended to use a virtual environment to manage dependencies. You can create one using venv:
 
 ![Screenshot 2024-04-11 at 13-44-54 Home](https://github.com/Demigod808/Apolloautomotive/assets/13771746/d2f3e965-eb1d-437e-aac6-ee651b941d46)
 ![Screenshot 2024-04-11 at 13-45-10 Login](https://github.com/Demigod808/Apolloautomotive/assets/13771746/e2e4eaa2-c965-47a9-9c57-597dc8ae963c)
