@@ -4,7 +4,6 @@ Python Flask application for used car sales website. The purpose of this website
 ## Requirements
 
 - Python 3.8
-- PyCharm
 - Git (optional)
 - [Requirements](https://github.com/Demigod808/Apolloautomotive/blob/main/Requirements.txt)
 
