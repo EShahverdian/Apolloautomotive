@@ -9,7 +9,7 @@ Python Flask application for used car sales website. The purpose of this website
 
 - Python 3.8
 - Git (optional)
-- [Requirements](https://github.com/Demigod808/Apolloautomotive/blob/main/Requirements.txt)
+- [Requirements](https://github.com/EShahverdian/Apolloautomotive/blob/main/Requirements.txt)
 
 ## Installation
 
@@ -18,7 +18,7 @@ Python Flask application for used car sales website. The purpose of this website
 If you haven't already, clone the repository to your local machine using Git:
 
 ```
-git clone https://github.com/Demigod808/Apolloautomotive.git
+git clone https://github.com/EShahverdian/Apolloautomotive.git
 cd Apolloautomotive
 ```
 Alternatively, you can download the ZIP file from GitHub and extract it.
